@@ -45,6 +45,8 @@ const Products = ({ products, gap }: ProductsProps) => {
     }
   };
 
+  const jpy = new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" });
+
   return (
     <div
       className={` ${gap} grid justify-center hover:scale-105
@@ -67,10 +69,12 @@ const Products = ({ products, gap }: ProductsProps) => {
         <nav className=" text-sm font-normal sm:font-medium">
           <p> {products.name} </p>
           <div className=" flex gap-3">
-            <span className=" text-sm text-lightGray line-through ">
-              ${products.oldPrice}
-            </span>
-            <b className=" text-zinc-900 "> ${products.price} </b>
+            {products.oldPrice && (
+              <span className=" text-sm text-lightGray line-through ">
+                {jpy.format(products.oldPrice)}
+              </span>
+            )}
+            <b className=" text-zinc-900 "> {jpy.format(products.price)} </b>
           </div>
         </nav>
 

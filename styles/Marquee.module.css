@@ -8,3 +8,18 @@
     animation-play-state: paused;
     
 }
+
+.animRtl {
+    position: absolute;
+    will-change: transform;
+    animation: marqueeRtl 15s linear infinite;
+}
+
+.animRtl:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marqueeRtl {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}

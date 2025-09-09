@@ -144,12 +144,13 @@ const Show = ({ product, products }) => {
                 Add to Cart
               </button>
 
-              <div
+              <button
+                type="button"
                 className=" text-center hover:scale-105 transition shadow-md cursor-pointer
-                 bg-primary text-xl px-8 py-2  text-highLight ring-1 ring-primary"
+                 bg-primary text-xl px-8 py-2  text-highLight ring-1 ring-primary text-white w-full sm:w-auto"
               >
-                Buy Now
-              </div>
+                Buy now
+              </button>
             </div>
           </section>
         </div>
