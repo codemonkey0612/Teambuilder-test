@@ -1,0 +1,10 @@
+.anim {
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s linear infinite ;
+}
+
+.anim:hover {
+    animation-play-state: paused;
+    
+}

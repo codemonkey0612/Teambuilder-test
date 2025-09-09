@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@config '../tailwind.config';
+
+.logoText {
+  font-size: 32px;
+  background: linear-gradient(to right, #3ec788 0%, #00db25 100%);
+  -webkit-text-fill-color: white;
+  padding: 0.1em 0.6em;
+  border-radius: 25px 25px 0 0;
+}
+
+.nav2 {
+  font-size: 32px;
+  background: linear-gradient(to right, #3ec788 0%, #00db25 100%);
+  -webkit-text-fill-color: white;
+  padding: 0.1em 0.6em;
+  /* border-radius: 25px 25px 0 0; */
+}
+
+.headTitle {
+  font-size: 32px;
+  background: linear-gradient(to right, #3ec788 0%, #00db25 100%);
+  -webkit-text-fill-color: white;
+  /* border-radius: 20px 20px 0 0; */
+  border-bottom: 5px solid #21b021;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 161, 52);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(9, 107, 9);
+  color: #b41c4c;
+}
